@@ -1,7 +1,7 @@
-project "yml-cpp"
+project "yaml-cpp"
 	kind "StaticLib"
 	language "C++"
-  staticruntime "off"
+  	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -9,13 +9,13 @@ project "yml-cpp"
 	files
 	{
 		"src/**.h",
-    "src/**.cpp"
+    	"src/**.cpp"
 	}
 
-  includedirs
-  {
-    "include"
-  }
+	includedirs
+	{
+		"include"
+	}
 
 	filter "system:windows"
 		systemversion "latest"
